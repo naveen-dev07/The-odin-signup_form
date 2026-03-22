@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Account</title>
+  <link rel="stylesheet" href="signstyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- LEFT: Image -->
+  <div class="panel-image">
+    <div class="brand">
+      <div class="brand-icon">◆</div>
+      <span class="brand-name">Arcane</span>
+    </div>
+    <div class="image-quote">
+      <blockquote>"The best way to predict the future is to create it."</blockquote>
+      <cite>— Peter Drucker</cite>
+    </div>
+  </div>
+
+  <!-- RIGHT: Form -->
+  <div class="panel-form">
+    <div class="form-header">
+      <h1>Create your account</h1>
+      <p>Free forever. No credit card needed.</p>
+    </div>
+
+    <form id="signupForm" novalidate>
+
+      <div class="field-row">
+        <div class="field">
+          <input type="text" id="firstName" placeholder="First" autocomplete="given-name" required/>
+          <label for="firstName">First Name</label>
+        </div>
+        <div class="field">
+          <input type="text" id="lastName" placeholder="Last" autocomplete="family-name" required/>
+          <label for="lastName">Last Name</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <input type="email" id="email" placeholder="Email" autocomplete="email" required/>
+        <label for="email">Email address</label>
+      </div>
+
+      <div class="field">
+        <input type="tel" id="phone" placeholder="Phone" autocomplete="tel"/>
+        <label for="phone">Phone (optional)</label>
+      </div>
+
+      <div class="field field--password">
+        <input type="password" id="password" placeholder="Password" autocomplete="new-password" required/>
+        <label for="password">Password</label>
+        <button type="button" class="eye-toggle" id="eyeToggle" aria-label="Show password">
+          <svg class="icon-show" viewBox="0 0 24 24">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+          <svg class="icon-hide" viewBox="0 0 24 24">
+            <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/>
+            <path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/>
+            <line x1="1" y1="1" x2="23" y2="23"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="field field--password">
+        <input type="password" id="confirmPassword" placeholder="Confirm" autocomplete="new-password" required/>
+        <label for="confirmPassword">Confirm Password</label>
+      </div>
+
+      <div class="divider"></div>
+
+      <button type="submit" class="btn-submit" id="submitBtn">
+        <span class="btn-text">Create Account</span>
+        <div class="pulse-dots"><span></span><span></span><span></span></div>
+      </button>
+
+      <p class="terms">
+        By continuing, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
+      </p>
+
+    </form>
+
+    <div class="form-footer">
+      Already have an account? <a href="#">Sign in</a>
+    </div>
+  </div>
+
+ 
+
+</body>
+</html>
+
+
